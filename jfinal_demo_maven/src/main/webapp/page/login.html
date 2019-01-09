@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--网页语言是中文-->
+<html lang="zh">
+<head>
+	<title>登录</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/log.css">
+    <script src="../assets/js/jquery-1.11.3.min.js"></script>
+    <script src="../assets/js/bs/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../assets/js/bs/bootstrap.min.css">
+    <style>
+        .color{color: #fff;}
+        .form-group{padding: 15px 0px;}
+        .zt{position: absolute;top: 22%;left: 30%;background-color: rgba(10,10,10,.5);padding-right: 30px;}
+        label{color: orange;}
+        /*.control-label{text-align: center !important;}*/
+    </style>
+</head>
+<body style="background: url('../assets/img/login-bg.jpg') no-repeat;background-size:100%;">
+<div style="width:550px;height:320px;margin: 0 auto;" class="zt">
+    <form class="form-horizontal" id="registerForm" action="index.html" method="post" target="_blank">
+        <div class="form-group row" style="margin-top: 20px;">
+            <label for="inputText" class="col-sm-3 control-label"> </label>
+            <div class="col-sm-8">
+                <!--<div><img src="images/logo.jpg" class="img-rounded img-responsive center-block"></div>-->
+                <div class="text-left" style="font-size: 40px;color:#fff;font-weight: bold;">欢迎登录博客</div>
+            </div>
+        </div>
+        <div class="form-group row" style="margin-top: 20px;">
+            <label for="inputText" class="col-sm-3 control-label">邮&nbsp;&nbsp;&nbsp;&nbsp;箱：</label>
+            <div class="col-sm-8">
+                <input id="inputText" type="text" class="form-control"  placeholder="请输入email地址">
+                <div id="email-rsg" class="color"></div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputPwd" class="col-sm-3 control-label">密&nbsp;&nbsp;&nbsp;&nbsp;码：</label>
+            <div class="col-sm-8">
+                <input id="inputPwd" type="password" class="form-control" placeholder="请输入密码">
+                <div id="pwd1-rsg" class="color"></div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-offset-3 col-sm-8">
+                <input type="submit" class="btn btn-danger" value="登录" onclick="addInfo()" style="margin-right: 50px;">
+                <input id="cancel" type="reset" class="btn btn-danger" value="重置">
+            </div>
+        </div>
+    </form>
+</div>
+<script type="text/javascript" src="../assets/js/login.js"></script>
+</body>
+</html>

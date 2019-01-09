@@ -1,0 +1,17 @@
+# config
+#type=oracle
+type=mysql
+jdbcUrl = jdbc:mysql://localhost/jfinal_demo?characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull
+user = root
+password =li245921
+devMode = true
+
+
+
+ 
+#oracle.driver=oracle.jdbc.driver.OracleDriver
+#oracle.url=jdbc:oracle:thin:@127.0.0.1:1521:orcl
+#oracle.username=scott
+#oracle.password=xiaohu
+ 
+#config.devModel=true

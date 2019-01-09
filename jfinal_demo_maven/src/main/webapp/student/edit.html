@@ -1,0 +1,10 @@
+#@layout()
+#define main()
+<h1>JFinal Student修改页面</h1>
+<div class="table_box">
+   <input type="hidden" name="student.id"  value="#(student.id??)" >
+   <form action="/student/update">
+   		#include("_formS.html")
+   </form>
+</div>
+#end

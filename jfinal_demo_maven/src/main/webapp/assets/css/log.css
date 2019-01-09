@@ -1,0 +1,44 @@
+.write{
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    background: #b10021;
+    text-align: center;
+    color: #ffffff;
+    margin: 10px 15px;
+    border-bottom: 1px solid #b10021;
+    cursor: pointer;
+}
+.write a{color: #fff !important;}
+.tab-bar div:hover{
+    background:#CD3333 ;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.log{
+    margin: 50px;
+    padding: 50px 30px;
+    border: 1px solid #e6e6e6;
+    background: #b10021;
+    color: #fff;
+    text-align: center;
+}
+@media (max-width:768px) {
+    .log{
+        margin: 10px;
+        padding: 5px 30px;
+    }
+}
+.tab-box{
+    padding: 50px 15px 50px 15px;
+}
+.tab-box table tr:first-child td{
+    border-bottom: 1px solid #ddd;
+}
+.tab-box table tr td{
+    border-top: 1px solid #fff !important;
+}
+.on{
+    background:#CD3333 ;
+    opacity: 0.8;
+}

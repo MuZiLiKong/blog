@@ -1,0 +1,25 @@
+<fieldset class="solid">
+	<legend>修改Student</legend>
+	<input type="hidden" name="id" value="#(student.id??)" />
+	<div>
+		<label>姓名</label>
+		<input type="text" name="name" value="#(student.name??)" />
+	</div>
+	<div>
+		<label>电话</label>
+		<input type="text" name="phone" value="#(student.phone??)" />
+	</div>
+	<div>
+		<label>性别</label>
+		<input type="text" name="sex" value="#(student.sex??)" />
+	</div>
+	<div>
+		<label>学校</label>
+		<input type="text" name="school" value="#(student.school??)" />
+	</div>
+	
+	<div>
+		<label>&nbsp;</label>
+		<input value="修改" type="submit">
+	</div>
+</fieldset>

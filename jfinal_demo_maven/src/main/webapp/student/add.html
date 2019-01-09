@@ -1,0 +1,29 @@
+#@layout()
+#define main()
+<h1>JFinal Demo Student增加页面</h1>
+<div class="table_box">
+	<form action="/student/save" method="post">
+	<input type="hidden" value="" name="isdeleted">
+	<div>
+	<span>学生姓名：</span><input type="text" value="#(name??)" name="name">
+	</div>
+	<div>
+	<span>性别111：</span><input type="text" value="#(sex??)" name="sex">
+	</div>
+	<div>
+	<span>电话</span><input type="text" value="#(phone??)" name="phone">
+	</div>
+	<div>
+	<span>课程</span><input type="text" value="#(courld??)" name="courld">
+	</div>
+	<div>
+	<span>学校</span><input type="text" value="#(school??)" name="school">
+	</div>
+	<div>
+		<label>&nbsp;</label>
+		<input value="提交" type="submit">
+	</div>	
+	</form>
+	<script type="text/javascript" src="/assets/js/student.js"></script>
+</div>
+#end

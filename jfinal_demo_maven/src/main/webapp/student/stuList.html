@@ -1,0 +1,36 @@
+#@layout()
+#define main()
+<h1>JFinal Demo 项目首页</h1>
+<div><a href="/student/add">创建学生</a></div>
+<div class="table_box">
+	<table class="list">
+		<tbody>
+			<tr>
+				<th width="4%">id</th>
+				<th width="25%">姓名</th>
+				<th width="25%">性别</th>
+				<th width="20%">电话</th>
+				<th width="10%">课程ID</th>
+				<th width="10%">学校哪里</th>
+				<th width="12%">操作</th>
+			</tr>			
+			 #for(x : list)
+			<tr>
+				<td style="text-align:left;">#(x.id)</td>
+				<td style="text-align:left;">#(x.name)</td>
+				<td style="text-align:left;">#(x.sex)</td>
+				<td style="text-align:left;">#(x.phone)</td>
+				<td style="text-align:left;">#(x.courId)</td>
+				<td style="text-align:left;">#(x.school)</td>
+				<td style="text-align:left;">
+					<!-- &nbsp;&nbsp;<a href="/student/delete/#(x.id)">删除</a> -->
+					<input class="tjan" type="button"  value="删除"  onclick="del(#(x.id))"/>  					
+					&nbsp;&nbsp;<a href="/student/edit/#(x.id)">修改</a>
+				</td>
+			</tr>
+			#end 
+		</tbody>
+	</table>
+		<script type="text/javascript" src="/assets/js/student.js"></script>
+</div>
+#end
