@@ -35,4 +35,7 @@ public class AppTest
     {
         assertTrue( true );
     }
+    public void list(){
+    	System.out.println(1111);
+    }
 }
